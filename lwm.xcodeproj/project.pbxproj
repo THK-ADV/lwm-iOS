@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FFF57FE215CE72E00343B6C /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF57FD215CE72E00343B6C /* LoginValidator.swift */; };
+		3FFF5802215CE81C00343B6C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5801215CE81C00343B6C /* LoginService.swift */; };
+		3FFF5806215D0E0400343B6C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5805215D0E0400343B6C /* App.swift */; };
+		3FFF5809215D1D5A00343B6C /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5808215D1D5A00343B6C /* ErrorPresenter.swift */; };
+		3FFF580B215D1D8C00343B6C /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF580A215D1D8C00343B6C /* UserDefaults+Extension.swift */; };
+		3FFF580E215D202C00343B6C /* LWMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF580D215D202C00343B6C /* LWMService.swift */; };
+		3FFF5810215D206300343B6C /* AuthorityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF580F215D206300343B6C /* AuthorityService.swift */; };
 		FA1EF2FF215BB55A00667738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF2FE215BB55A00667738 /* AppDelegate.swift */; };
 		FA1EF304215BB55A00667738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1EF302215BB55A00667738 /* Main.storyboard */; };
 		FA1EF307215BB55B00667738 /* lwm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF305215BB55B00667738 /* lwm.xcdatamodeld */; };
@@ -19,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FFF57FD215CE72E00343B6C /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
+		3FFF5801215CE81C00343B6C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		3FFF5805215D0E0400343B6C /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		3FFF5808215D1D5A00343B6C /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
+		3FFF580A215D1D8C00343B6C /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		3FFF580D215D202C00343B6C /* LWMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWMService.swift; sourceTree = "<group>"; };
+		3FFF580F215D206300343B6C /* AuthorityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorityService.swift; sourceTree = "<group>"; };
 		FA1EF2FB215BB55A00667738 /* lwm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lwm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1EF2FE215BB55A00667738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA1EF303215BB55A00667738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +59,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FFF57FF215CE75300343B6C /* login */ = {
+			isa = PBXGroup;
+			children = (
+				FAB95800215BCD48002786BD /* LoginViewController.swift */,
+				FAB95801215BCD49002786BD /* LoginViewController.xib */,
+				3FFF57FD215CE72E00343B6C /* LoginValidator.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		3FFF5800215CE81200343B6C /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				FAB957F5215BC7E3002786BD /* Result.swift */,
+				FAB957F7215BC806002786BD /* Webservice.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		3FFF5807215D1D5500343B6C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3FFF5808215D1D5A00343B6C /* ErrorPresenter.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3FFF580C215D1DF400343B6C /* service */ = {
+			isa = PBXGroup;
+			children = (
+				3FFF5801215CE81C00343B6C /* LoginService.swift */,
+				3FFF580D215D202C00343B6C /* LWMService.swift */,
+				3FFF580F215D206300343B6C /* AuthorityService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		FA1EF2F2215BB55900667738 = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +115,11 @@
 		FA1EF2FD215BB55A00667738 /* lwm */ = {
 			isa = PBXGroup;
 			children = (
+				3FFF5807215D1D5500343B6C /* view */,
 				FAB957FB215BCA95002786BD /* controller */,
 				FAB957F4215BC7D3002786BD /* model */,
 				FA1EF2FE215BB55A00667738 /* AppDelegate.swift */,
+				3FFF5805215D0E0400343B6C /* App.swift */,
 				FA1EF302215BB55A00667738 /* Main.storyboard */,
 				FA1EF308215BB55E00667738 /* Assets.xcassets */,
 				FA1EF30A215BB55E00667738 /* LaunchScreen.storyboard */,
@@ -79,8 +132,9 @@
 		FAB957F4215BC7D3002786BD /* model */ = {
 			isa = PBXGroup;
 			children = (
-				FAB957F5215BC7E3002786BD /* Result.swift */,
-				FAB957F7215BC806002786BD /* Webservice.swift */,
+				3FFF5800215CE81200343B6C /* networking */,
+				3FFF580C215D1DF400343B6C /* service */,
+				3FFF580A215D1D8C00343B6C /* UserDefaults+Extension.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -88,8 +142,7 @@
 		FAB957FB215BCA95002786BD /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				FAB95800215BCD48002786BD /* LoginViewController.swift */,
-				FAB95801215BCD49002786BD /* LoginViewController.xib */,
+				3FFF57FF215CE75300343B6C /* login */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -165,11 +218,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFF5806215D0E0400343B6C /* App.swift in Sources */,
+				3FFF5809215D1D5A00343B6C /* ErrorPresenter.swift in Sources */,
+				3FFF57FE215CE72E00343B6C /* LoginValidator.swift in Sources */,
+				3FFF580B215D1D8C00343B6C /* UserDefaults+Extension.swift in Sources */,
 				FAB95802215BCD49002786BD /* LoginViewController.swift in Sources */,
 				FA1EF307215BB55B00667738 /* lwm.xcdatamodeld in Sources */,
 				FAB957F6215BC7E3002786BD /* Result.swift in Sources */,
 				FAB957F8215BC806002786BD /* Webservice.swift in Sources */,
+				3FFF580E215D202C00343B6C /* LWMService.swift in Sources */,
 				FA1EF2FF215BB55A00667738 /* AppDelegate.swift in Sources */,
+				3FFF5802215CE81C00343B6C /* LoginService.swift in Sources */,
+				3FFF5810215D206300343B6C /* AuthorityService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

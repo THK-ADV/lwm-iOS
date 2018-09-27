@@ -9,20 +9,6 @@
 import UIKit
 import CoreData
 
-final class App {
-    private let window: UIWindow
-
-    init(window: UIWindow) {
-        self.window = window
-        
-        let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: loginViewController)
-        navigationController.navigationBar.prefersLargeTitles = true
-        
-        self.window.rootViewController = navigationController
-    }
-}
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -34,7 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return false
         }
         
-        app = App(window: window)
+        app = App(
+            window: window,
+            webService: Webservice(urlSession: URLSession.shared, debug: true),
+            userDefaults: UserDefaults.standard
+        )
+        
+//        app?.logUserDefaults()
         
         return true
     }
