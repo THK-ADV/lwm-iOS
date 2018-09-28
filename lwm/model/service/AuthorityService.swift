@@ -9,25 +9,53 @@
 import Foundation
 
 struct Authority: Codable {
-    let user: Employee
+    let user: User
     let course: Course?
     let id: UUID
-}
-
-protocol User {
-    var systemId: String { get }
-    var lastname: String { get }
-    var firstname: String { get }
-    var email: String { get }
-}
-
-struct Employee: User, Codable {
-    let systemId: String
-    let lastname: String
-    let firstname: String
-    let email: String
-    let status: String
-    let id: UUID
+    
+    private enum CodingKeys: String, CodingKey {
+        case user
+        case course
+        case id
+    }
+    
+    init(user: User, course: Course?, id: UUID) {
+        self.user = user
+        self.course = course
+        self.id = id
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let user: User
+        
+        if let student = try? container.decode(Student.self, forKey: .user) {
+            user = .student(student)
+        } else if let employee = try? container.decode(Employee.self, forKey: .user) {
+            user = .employee(employee)
+        } else {
+            fatalError()
+        }
+        
+        let course = try container.decodeIfPresent(Course.self, forKey: .course)
+        let id = try container.decode(UUID.self, forKey: .id)
+        
+        self.init(user: user, course: course, id: id)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        switch user {
+        case .employee(let employee):
+            try container.encode(employee, forKey: .user)
+        case .student(let student):
+            try container.encode(student, forKey: .user)
+        }
+        
+        try container.encodeIfPresent(course, forKey: .course)
+        try container.encode(id, forKey: .id)
+    }
 }
 
 struct Course: Codable {

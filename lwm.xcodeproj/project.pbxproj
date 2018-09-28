@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F010D3F215E6CE900CA63AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F010D3E215E6CE900CA63AE /* User.swift */; };
+		3F010D41215E6FAE00CA63AE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F010D40215E6FAE00CA63AE /* Employee.swift */; };
+		3F010D43215E6FB600CA63AE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F010D42215E6FB600CA63AE /* Student.swift */; };
 		3FFF57FE215CE72E00343B6C /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF57FD215CE72E00343B6C /* LoginValidator.swift */; };
 		3FFF5802215CE81C00343B6C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5801215CE81C00343B6C /* LoginService.swift */; };
 		3FFF5806215D0E0400343B6C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5805215D0E0400343B6C /* App.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F010D3E215E6CE900CA63AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3F010D40215E6FAE00CA63AE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		3F010D42215E6FB600CA63AE /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		3FFF57FD215CE72E00343B6C /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
 		3FFF5801215CE81C00343B6C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		3FFF5805215D0E0400343B6C /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -135,6 +141,9 @@
 				3FFF5800215CE81200343B6C /* networking */,
 				3FFF580C215D1DF400343B6C /* service */,
 				3FFF580A215D1D8C00343B6C /* UserDefaults+Extension.swift */,
+				3F010D3E215E6CE900CA63AE /* User.swift */,
+				3F010D40215E6FAE00CA63AE /* Employee.swift */,
+				3F010D42215E6FB600CA63AE /* Student.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -218,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F010D3F215E6CE900CA63AE /* User.swift in Sources */,
 				3FFF5806215D0E0400343B6C /* App.swift in Sources */,
 				3FFF5809215D1D5A00343B6C /* ErrorPresenter.swift in Sources */,
+				3F010D41215E6FAE00CA63AE /* Employee.swift in Sources */,
 				3FFF57FE215CE72E00343B6C /* LoginValidator.swift in Sources */,
 				3FFF580B215D1D8C00343B6C /* UserDefaults+Extension.swift in Sources */,
 				FAB95802215BCD49002786BD /* LoginViewController.swift in Sources */,
@@ -229,6 +240,7 @@
 				3FFF580E215D202C00343B6C /* LWMService.swift in Sources */,
 				FA1EF2FF215BB55A00667738 /* AppDelegate.swift in Sources */,
 				3FFF5802215CE81C00343B6C /* LoginService.swift in Sources */,
+				3F010D43215E6FB600CA63AE /* Student.swift in Sources */,
 				3FFF5810215D206300343B6C /* AuthorityService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
