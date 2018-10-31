@@ -10,6 +10,9 @@
 		3F010D3F215E6CE900CA63AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F010D3E215E6CE900CA63AE /* User.swift */; };
 		3F010D41215E6FAE00CA63AE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F010D40215E6FAE00CA63AE /* Employee.swift */; };
 		3F010D43215E6FB600CA63AE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F010D42215E6FB600CA63AE /* Student.swift */; };
+		3FA97F462189E12A0027AFBA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA97F452189E12A0027AFBA /* Course.swift */; };
+		3FA97F482189E4060027AFBA /* Semester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA97F472189E4060027AFBA /* Semester.swift */; };
+		3FA97F4A2189EE5F0027AFBA /* ScheduleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA97F492189EE5F0027AFBA /* ScheduleEntry.swift */; };
 		3FFF57FE215CE72E00343B6C /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF57FD215CE72E00343B6C /* LoginValidator.swift */; };
 		3FFF5802215CE81C00343B6C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5801215CE81C00343B6C /* LoginService.swift */; };
 		3FFF5806215D0E0400343B6C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5805215D0E0400343B6C /* App.swift */; };
@@ -32,6 +35,9 @@
 		3F010D3E215E6CE900CA63AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3F010D40215E6FAE00CA63AE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		3F010D42215E6FB600CA63AE /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3FA97F452189E12A0027AFBA /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		3FA97F472189E4060027AFBA /* Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semester.swift; sourceTree = "<group>"; };
+		3FA97F492189EE5F0027AFBA /* ScheduleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEntry.swift; sourceTree = "<group>"; };
 		3FFF57FD215CE72E00343B6C /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
 		3FFF5801215CE81C00343B6C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		3FFF5805215D0E0400343B6C /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 				3F010D3E215E6CE900CA63AE /* User.swift */,
 				3F010D40215E6FAE00CA63AE /* Employee.swift */,
 				3F010D42215E6FB600CA63AE /* Student.swift */,
+				3FA97F452189E12A0027AFBA /* Course.swift */,
+				3FA97F472189E4060027AFBA /* Semester.swift */,
+				3FA97F492189EE5F0027AFBA /* ScheduleEntry.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -230,12 +239,15 @@
 				3F010D3F215E6CE900CA63AE /* User.swift in Sources */,
 				3FFF5806215D0E0400343B6C /* App.swift in Sources */,
 				3FFF5809215D1D5A00343B6C /* ErrorPresenter.swift in Sources */,
+				3FA97F4A2189EE5F0027AFBA /* ScheduleEntry.swift in Sources */,
 				3F010D41215E6FAE00CA63AE /* Employee.swift in Sources */,
 				3FFF57FE215CE72E00343B6C /* LoginValidator.swift in Sources */,
 				3FFF580B215D1D8C00343B6C /* UserDefaults+Extension.swift in Sources */,
 				FAB95802215BCD49002786BD /* LoginViewController.swift in Sources */,
 				FA1EF307215BB55B00667738 /* lwm.xcdatamodeld in Sources */,
+				3FA97F462189E12A0027AFBA /* Course.swift in Sources */,
 				FAB957F6215BC7E3002786BD /* Result.swift in Sources */,
+				3FA97F482189E4060027AFBA /* Semester.swift in Sources */,
 				FAB957F8215BC806002786BD /* Webservice.swift in Sources */,
 				3FFF580E215D202C00343B6C /* LWMService.swift in Sources */,
 				FA1EF2FF215BB55A00667738 /* AppDelegate.swift in Sources */,

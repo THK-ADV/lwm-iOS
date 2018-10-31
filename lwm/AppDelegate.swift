@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         app = App(
             window: window,
-            webService: Webservice(urlSession: URLSession.shared, debug: true),
+            webService: Webservice(urlSession: URLSession.shared, debug: false),
             userDefaults: UserDefaults.standard
         )
         

@@ -12,7 +12,7 @@ protocol LWMService {
     static var BaseURL: URL { get }
 }
 
-extension LWMService {
+extension LWMService { // FIXME: remove?
     
     static var BaseURL: URL {
         return URL(string: "http://praktikum.gm.fh-koeln.de:9000")!

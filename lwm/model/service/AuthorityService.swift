@@ -58,15 +58,6 @@ struct Authority: Codable {
     }
 }
 
-struct Course: Codable {
-    let label: String
-    let description: String
-    let abbreviation: String
-    let lecturer: Employee
-    let semesterIndex: Int
-    let id: UUID
-}
-
 final class AuthorityService: LWMService {
     private let webService: Webservice
     
